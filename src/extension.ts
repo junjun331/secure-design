@@ -1325,11 +1325,11 @@ export function activate(context: vscode.ExtensionContext): void {
         }
     );
 
-    const reportBugDisposable = vscode.commands.registerCommand('securedesign.reportBug', () => {
-        vscode.env.openExternal(
-            vscode.Uri.parse('https://github.com/hbmartin/secure-design/issues')
-        );
-    });
+    // const reportBugDisposable = vscode.commands.registerCommand('securedesign.reportBug', () => {
+    //     vscode.env.openExternal(
+    //         vscode.Uri.parse('https://github.com/hbmartin/secure-design/issues')
+    //     );
+    // });
 
     // Set up message handler for auto-canvas functionality
     sidebarProvider.setMessageHandler(message => {
@@ -1397,8 +1397,8 @@ export function activate(context: vscode.ExtensionContext): void {
         clearChatDisposable,
         resetWelcomeDisposable,
         initializeProjectDisposable,
-        workspaceChangeDisposable,
-        reportBugDisposable
+        workspaceChangeDisposable
+        // reportBugDisposable
     );
 
     context.subscriptions.push(

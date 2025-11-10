@@ -71,12 +71,6 @@
         "category": "Securedesign"
       },
       {
-        "command": "securedesign.reportBug",
-        "title": "Report Bug",
-        "category": "Securedesign",
-        "icon": "$(bug)"
-      },
-      {
         "command": "securedesign.dumpWorkspaceState",
         "title": "Dump Workspace State",
         "category": "Securedesign",
@@ -92,11 +86,6 @@
         },
         {
           "command": "securedesign.clearChatHistory",
-          "when": "view == securedesign.chatView",
-          "group": "navigation"
-        },
-        {
-          "command": "securedesign.reportBug",
           "when": "view == securedesign.chatView",
           "group": "navigation"
         }

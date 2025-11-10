@@ -654,10 +654,7 @@ const CanvasView: React.FC<CanvasViewProps> = ({ nonce }) => {
                     <h3>
                         No design files found in <code>.superdesign/design_iterations/</code>
                     </h3>
-                    <p>
-                        Prompt SecureDesign OR Cursor/Windsurf/Claude Code to design UI like{' '}
-                        <kbd>Help me design a calculator UI</kbd> and preview the UI here
-                    </p>
+                    <p>Prompt SecureDesign to design UX and preview here</p>
                 </div>
             </div>
         );

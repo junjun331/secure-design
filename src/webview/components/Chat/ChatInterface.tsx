@@ -1212,14 +1212,10 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ layout }) => {
             <div className='chat-placeholder__content'>
                 <div className='empty-state-message'>
                     <p>
-                        <strong>Cursor/Windsurf/Claude Code rules already added</strong>, prompt
-                        Cursor/Windsurf/Claude Code to design UI like{' '}
-                        <kbd>Help me design a calculator UI</kbd> and preview the UI in SecureDesign
-                        canvas by <kbd>Cmd+Shift+P</kbd>{' '}
+                        Give me the requirements document and I can help you generate the UX.
+                        Preview the UX in SecureDesign canvas by <kbd>Cmd+Shift+P</kbd>{' '}
                         <code>&apos;SecureDesign: Open canvas view&apos;</code>
                     </p>
-                    <div className='empty-state-divider'>OR</div>
-                    <p>Start now by prompting SecureDesign.</p>
                 </div>
             </div>
         </div>
@@ -1331,7 +1327,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ layout }) => {
                         {/* Input Area */}
                         <div className='chat-input'>
                             <textarea
-                                placeholder='Design a calculator UI...'
+                                placeholder='Give me the requirements...'
                                 value={inputMessage}
                                 onChange={handleInputChange}
                                 onKeyDown={handleKeyDown}
